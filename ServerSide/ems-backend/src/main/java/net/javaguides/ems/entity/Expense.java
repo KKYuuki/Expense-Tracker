@@ -16,7 +16,7 @@ import java.time.LocalDate;
 @Table(name = "expenses")
 public class Expense {
 
-    enum Category {
+    public enum Category {
         Entertainment,
         Education,
         Hospital,
@@ -38,7 +38,6 @@ public class Expense {
     private Category expenseType;
 
     @ManyToOne
-    @JoinColumn(name = "user_id") // Assuming you have a field named "user_id" in the Expense table
+    @JoinColumn(name = "user_id")
     private User user;
-
 }

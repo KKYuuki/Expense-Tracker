@@ -22,6 +22,7 @@ const Dashboard = () => {
 
 
   return (
+   
     <div className="d-flex">
       <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 custom-sidebar">
         <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
@@ -44,7 +45,7 @@ const Dashboard = () => {
             </li>
             <li className="w-100">
               <Link
-                to="/dashboard/employee"
+                to="/dashboard/transactions"
                 className="nav-link px-0 align-middle text-white"
               >
                 <i className="bi bi-credit-card fs-4 ms-2"></i>
@@ -92,53 +93,14 @@ const Dashboard = () => {
 
 
         </div>
-
         <div className="dashbMainBody">
-          <div className="RecLog">
-            <h3>Recent Log</h3>
+          
+          <Outlet />
           </div>
-          <div className="containerRow">
-            <div class="firstRow">
-              <div class="expense-box food-drinks">
-                <span>Food & Drinks</span>
-                <span>₱45.00</span>
-              </div>
-            </div>
-            <div class="secRow">
-              <div class="expense-box utilities">
-                <span>Utilities</span>
-                <span>₱80.50</span>
-              </div>
-            </div>
-            <div class="thirdRow">
-              <div class="expense-box added-funds">
-                <span>Added Funds</span>
-                <span>₱120.25</span>
-              </div>
-            </div>
-            <div class="frthRow">
-              <div class="expense-box travel">
-                <span>Travel</span>
-                <span>₱200.00</span>
-              </div>
-            </div>
-            SEE MORE..
-            <div class="sxthRow">
-              <div class="expense-boxx totalInc">
-                <span>Total Income</span>
-                <span>₱200.00</span>
-              </div>
-            </div>
-            <div class="svnthRow">
-              <div class="expense-boxx totalExp">
-                <span>Total Expenses</span>
-                <span>₱200.00</span>
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
-    </div>
+    
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import IconLogo from "../assets/IconLogo.png";
 import logo from "../assets/logo.png";
 
 
@@ -31,7 +32,7 @@ const SignUp = () => {
     return (
         <div className='login-page'>
             <div className='header'>
-                <img src={logo} className='logo' alt="Your Logo" />
+            <img src={IconLogo} className='logo' onClick={() => { navigate('/') }}/>
                 <div className="login-container">
 
                     <div className="wrappedButtons">
@@ -58,7 +59,7 @@ const SignUp = () => {
                     {error && error}
                 </div>
 
-                <h2>DETAILS:</h2>
+                <img src={logo} className='logowthlabel' onClick={() => { navigate('/') }}/>
                 <form onSubmit={handleSubmit}>
                     <div className='nameContainer'>
                         <div className='nameSignUp'>

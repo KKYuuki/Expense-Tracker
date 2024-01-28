@@ -50,30 +50,24 @@
 }
 
 .userUser {
-    float: right;
+    margin: 10px;
     display: flex;
-    background-color: transparent;
-    margin: auto;
-    margin-right: 8px;
-
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
 
 }
 
 
 .userDetails {
-    margin: 0px;
-    margin-top: 7px;
-    margin-bottom: 4px;
-    font-size: large;
-    letter-spacing: 1px;
-    font-weight: 500;
-    color: #FFFFFF;
+    display: flex;
+    align-items: center;
 }
 
 
 .userName {
     background-color: transparent;
     padding: 5px;
+    margin-right: 10px;  
 
 }
 
@@ -88,14 +82,16 @@
 
 
 .userProf {
-    margin-top: 7.5px;
+    
+    display: flex;
+    align-items: center; /* Center items vertically */
     width: fit-content;
     height: 60px;
-    padding-left: 60px;
-    padding-left: 20px;
+    padding-left: 20px; /* Remove duplicate padding-left: 60px; */
     padding-right: 20px;
 
 }
+
 
 .salaryMenu {
     margin: 15px;

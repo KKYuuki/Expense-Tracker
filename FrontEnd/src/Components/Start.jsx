@@ -1,10 +1,9 @@
 import axios from "axios";
-import logo from "../assets/logo.png";
-import firstright from "../assets/firstright.png";
-import secondleft from "../assets/secondleft.png";
+import logoo from "../assets/logoo.png";
 import fblogo from "../assets/fblogo.png";
 import linkedlogo from "../assets/linkedlogo.png";
 import iglogo from "../assets/iglogo.png";
+import IconLogo from "../assets/IconLogo.png";
 
 
 
@@ -32,7 +31,8 @@ const Start = () => {
 
     <div className="App" style={{ backgroundColor: 'white' }}>
       <div className='header'>
-        <img src={logo} className='logo' alt="Your Logo" />
+                  <img src={IconLogo} className='logo' onClick={() => { navigate('/') }}/>
+               
         <div className="login-container">
           
           <div className="wrappedButtons">
@@ -53,7 +53,7 @@ const Start = () => {
       </div>
 
       <div className='first-p'>
-      <img src={firstright} className='firstright' alt="Your Logo" />
+      <img src={logoo} className='firstright' alt="Your Logo" />
       </div>
 
       <div className='footer'>

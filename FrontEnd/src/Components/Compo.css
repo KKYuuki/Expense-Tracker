@@ -300,17 +300,196 @@ body {
 }
 
 .expense-boxx span:first-child {
-  font-size: 25px; 
+  font-size: 25px;
   font-weight: 600;
 }
 
 .expense-boxx span:last-child {
-  font-size: 40px; 
+  font-size: 40px;
   font-weight: 600;
-  margin-top: 5px; 
-  margin-left: auto; 
+  margin-top: 5px;
+  margin-left: auto;
 }
 
-.homeeeeee{
-  background: red;
+
+.mainTrans {
+  display: flex;
+}
+
+.leftCont {
+  width: 700px;
+  height: 959px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+}
+
+/* Responsive breakpoint */
+@media (min-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.title {
+  margin: 20px;
+  margin-bottom: 5px;
+}
+
+.title span {
+  color: #2B2E4A;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.wholeTable {
+  margin: 10px;
+}
+
+
+.rightboxes {
+  width: 500px;
+  height: 475px;
+
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  color: #2B2E4A;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+}
+
+.rightboxes span {
+  color: #2B2E4A;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 10px;
+
+}
+
+.fundsBox {
+  width: 400px;
+  height: 200px;
+  align-self: center;
+  background-color: rgba(126, 182, 112, 0.573);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.addFunds {
+  margin: 10px;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+.addFndsInput label {
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+}
+
+.nameInpt,
+.amountInpt,
+.categInpt {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+}
+
+.secconfirmButton{
+  align-self: center;
+  margin: 20px;
+  
+}
+.secconfirmButton button{
+    background: #3078C1;
+}
+
+.namelabel {
+  margin: 10px;
+}
+
+.inptBoxLwrRight {
+  border: 2px solid #2B2E4A;
+  width: 350px;
+  height: 45px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: auto !important;
+
+}
+
+.inputAmnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputAmnt input {
+  border: 2px solid #2B2E4A;
+  width: 340px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-left: auto !important;
+}
+
+.inputAmnt label {
+  width: 5px;
+  color: black;
+}
+
+.amountCntnr {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  margin-top: 15px;
+}
+
+.titleAmount span {
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+}
+
+.amountCntnr div {
+  margin-right: 10px;
+  /* Adjust this as needed */
+}
+
+.confirmButton {
+  align-self: center;
+  margin: 20px;
+}
+
+.confirmButton button {
+  background: #3078C1;
+}
+
+.addFundsInt label {
+  color: black;
+}
+
+.footerr {
+  background: #3078c1;
+  height: 300px;
+}
+
+.footerNote h3 {
+  color: white;
+  margin: 20px;
 }

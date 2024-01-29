@@ -56,6 +56,16 @@ const Dashboard = () => {
             </li>
             <li className="w-100">
               <Link
+                to="/dashboard/history"
+                className="nav-link px-0 align-middle text-white"
+              >
+                <i className="bi bi-clock fs-4 ms-2"></i>
+                <span className="ms-2 ms-2 dashboard-link">History</span>
+              </Link>
+            </li>
+            
+            <li className="w-100">
+              <Link
                 to="/dashboard/jeepney_detail"
                 className="nav-link px-0 align-middle text-white"
               >

@@ -35,7 +35,7 @@ function App() {
       }>
         <Route path='' element={<Home />}></Route>
         <Route path='/dashboard/transactions' element={<Employee />}></Route>
-        <Route path='/dashboard/category' element={<Category />}></Route>
+        <Route path='/dashboard/history' element={<Category />}></Route>
         <Route path='/dashboard/jeepney_detail' element={<Jeepneys />}></Route>
         <Route path='/dashboard/add_jeepney' element={<AddJeepney />}></Route>
         <Route path='/dashboard/edit_jeepney/:id' element={<EditJeepney />}></Route>

@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,7 +12,6 @@ body {
   color: white;
   font-family: 'League Spartan', Arial, Helvetica, sans-serif;
 }
-
 
 .custom-sidebar {
   background-color: #003366 !important;
@@ -24,9 +22,7 @@ body {
 
 .noName {
   flex: 1;
-  /* This will make it take up the remaining space */
   overflow: hidden;
-  /* Ensures that the content inside .noName doesn't overflow */
   display: flex;
   flex-direction: column;
 }
@@ -34,31 +30,22 @@ body {
 .dashbMain {
   background: #3078c1;
   height: 90px;
-  width: auto;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
+  padding: 10px;
 }
 
 .dashbMainBody {
   flex: 1;
-  /* This will make it take up the remaining space */
   background-color: #d0d0d0;
   width: 100%;
-  /* Adjust the width as needed */
-  /* Add any additional styling for .dashbMainBody */
-
 }
-
-
 
 .container-fluid {
   box-shadow: 5px 5px 5px rgba(182, 67, 182, 0.1);
-
 }
-
-
-
 
 .btn-custom {
   font-size: 15px;
@@ -103,7 +90,6 @@ body {
 .btn-custom:hover {
   background-color: #2eb566;
 }
-
 
 .nav-pills .nav-link {
   margin-bottom: 15px;
@@ -159,7 +145,6 @@ body {
   background-color: rgba(0, 0, 0, 0.000000000000001) !important;
 }
 
-
 .dashboard-link {
   margin-left: 2rem;
   display: none;
@@ -188,23 +173,6 @@ body {
   color: #252D47;
 }
 
-.add-employee {
-  color: #46e2cb;
-}
-
-.add-employee {
-  background-color: #252D47;
-  color: #fff;
-  border-color: #46e2cb 4px;
-}
-
-.add-employee:hover {
-  background-color: #46e2cb;
-  color: #252D47;
-  border-color: 4px solid #252D47;
-  box-shadow: 0 0 5px #1AE1C4, 0 0 20px #1AE1C4;
-}
-
 .form-label {
   color: white;
 }
@@ -212,7 +180,6 @@ body {
 .RecLog {
   margin: 20px;
   color: #003366;
-
 }
 
 .RecLog h3 {
@@ -235,12 +202,10 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-
 }
 
 .food-drinks {
   border-left: 5px solid #FF6347;
-
 }
 
 .food-drinks span {
@@ -249,7 +214,6 @@ body {
 
 .utilities {
   border-left: 5px solid #4682B4;
-
 }
 
 .utilities span {
@@ -266,7 +230,6 @@ body {
 
 .travel {
   border-left: 5px solid #FFD700;
-
 }
 
 .travel span {
@@ -311,7 +274,6 @@ body {
   margin-left: auto;
 }
 
-
 .mainTrans {
   display: flex;
 }
@@ -326,12 +288,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 10px;
-
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
 }
 
-/* Responsive breakpoint */
 @media (min-width: 800px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -353,11 +312,9 @@ body {
   margin: 10px;
 }
 
-
 .rightboxes {
   width: 500px;
   height: 475px;
-
   background-color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   margin: 10px;
@@ -367,7 +324,6 @@ body {
   border-radius: 10px;
   color: #2B2E4A;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
 }
 
 .rightboxes span {
@@ -375,7 +331,6 @@ body {
   font-weight: 700;
   font-size: 25px;
   margin: 10px;
-
 }
 
 .fundsBox {
@@ -388,7 +343,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .addFunds {
@@ -409,16 +363,15 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px;
-
 }
 
-.secconfirmButton{
+.secconfirmButton {
   align-self: center;
   margin: 20px;
-  
 }
-.secconfirmButton button{
-    background: #3078C1;
+
+.secconfirmButton button {
+  background: #3078C1;
 }
 
 .namelabel {
@@ -432,7 +385,6 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin-left: auto !important;
-
 }
 
 .inputAmnt {
@@ -468,7 +420,6 @@ body {
 
 .amountCntnr div {
   margin-right: 10px;
-  /* Adjust this as needed */
 }
 
 .confirmButton {
@@ -486,10 +437,32 @@ body {
 
 .footerr {
   background: #3078c1;
-  height: 300px;
+  height: 100px;
 }
 
 .footerNote h3 {
   color: white;
   margin: 20px;
+}
+
+.homeeeeee {
+  height: 100%;
+}
+
+.wholeTablee {
+  width: 600px;
+  height: 570px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  color: #2B2E4A;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.headerRow {
+  margin: 10px;
 }

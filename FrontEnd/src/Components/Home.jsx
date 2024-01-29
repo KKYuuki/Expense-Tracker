@@ -66,65 +66,54 @@ const Home = () => {
   }
   
   return (
-    <div>
-      {/* <div className='header-home'>
-        <h1>DASHBOARD</h1>
-      </div> */}
-      <div className='p-3 d-flex justify-content-around mt-3'>
-
-        <div className='px-3 pt-2 pb-3 border shadow-sm w-25'>
-          <div className='text-center pb-1'>
-            <h4>Admin</h4>
-          </div>
-          <hr />
-          <div className='d-flex justify-content-between ta '>
-            <h5>Total:</h5>
-            <h5>{adminTotal}</h5>
-          </div>
-        </div>
-        <div className='px-3 pt-2 pb-3 border shadow-sm w-25'>
-          <div className='text-center pb-1'>
-            <h4>Employee</h4>
-          </div>
-          <hr />
-          <div className='d-flex justify-content-between'>
-            <h5>Total:</h5>
-            <h5>{employeeTotal}</h5>
-          </div>
-        </div>
-        <div className='px-3 pt-2 pb-3 border shadow-sm w-25'>
-          <div className='text-center pb-1'>
-            <h4>Total Remittance:</h4>
-          </div>
-          <hr />
-          <div className='d-flex justify-content-between'>
-            <h5>Total:</h5>
-            <h5>Php {totalRemittance}</h5>
-          </div>
-        </div>
-      </div>
-      <div className='mt-4 px-5 pt-3'>
-        <h3>List of Admins:</h3>
-        <table className='table rounded-3'>
-          <thead>
-            <tr>
-              <th>EMAIL</th>
-              <th>USERNAME</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              admins.map(a => (
-                <tr key={a.id}>
-                  <td>{a.email}</td>
-                  <td>{a.username}</td> {/* Display the name */}
-                </tr>
-              ))
-            }
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <div className='homeeeeee'>
+      
+      <div className="dashbMainBody">
+       
+       <div className="RecLog">
+         <h3>Recent Log</h3>
+       </div>
+       <div className="containerRow">
+         <div class="firstRow">
+           <div class="expense-box food-drinks">
+             <span>Food & Drinks</span>
+             <span>₱45.00</span>
+           </div>
+         </div>
+         <div class="secRow">
+           <div class="expense-box utilities">
+             <span>Utilities</span>
+             <span>₱80.50</span>
+           </div>
+         </div>
+         <div class="thirdRow">
+           <div class="expense-box added-funds">
+             <span>Added Funds</span>
+             <span>₱120.25</span>
+           </div>
+         </div>
+         <div class="frthRow">
+           <div class="expense-box travel">
+             <span>Travel</span>
+             <span>₱200.00</span>
+           </div>
+         </div>
+         SEE MORE..
+         <div class="sxthRow">
+           <div class="expense-boxx totalInc">
+             <span>Total Income</span>
+             <span>₱200.00</span>
+           </div>
+         </div>
+         <div class="svnthRow">
+           <div class="expense-boxx totalExp">
+             <span>Total Expenses</span>
+             <span>₱200.00</span>
+           </div>
+         </div>
+       </div>
+     </div>
+     </div>
   )
 }
 

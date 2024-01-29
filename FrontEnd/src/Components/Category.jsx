@@ -1,48 +1,68 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import fblogo from "../assets/fblogo.png";
+import linkedlogo from "../assets/linkedlogo.png";
+import iglogo from "../assets/iglogo.png";
 
 const Category = () => {
 
     const [category, setCategory] = useState([])
 
-    useEffect(()=> {
+    useEffect(() => {
         axios.get('http://localhost:3000/auth/category')
-        .then(result => {
-            if(result.data.Status) {
-                setCategory(result.data.Result);
-            } else {
-                alert(result.data.Error)
-            }
-        }).catch(err => console.log(err))
+            .then(result => {
+                if (result.data.Status) {
+                    setCategory(result.data.Result);
+                } else {
+                    alert(result.data.Error)
+                }
+            }).catch(err => console.log(err))
     }, [])
-  return (
-    <div className='px-5 mt-3'>
-        <div className='d-flex justify-content-center'>
-            {/* <h3>Job List</h3> */}
-        </div>
-        <div className='mt-3'>
-            <table className='table'>
-                <thead>
-                    <tr>
-                        <th>Employee Type:</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        category.map(c => (
-                            <tr>
-                                <td>{c.name}</td>
-                            </tr>
-                        ))
-                    }
-                </tbody>
-            </table>
-            <Link to="/dashboard/add_category" className='btn add-employee w-10'>Add Category</Link>
-        </div>
+    return (
+        <div className='homeeeeee'>
 
-    </div>
-  )
+            <div className="dashbMainBody">
+
+                <div className="RecLog">
+                    <h3>History</h3>
+                </div>
+                <div className="containerRow">
+                    <div class="firstRow">
+                        <div class="expense-box food-drinks">
+                            <span>Food & Drinks</span>
+                            <span>₱45.00</span>
+                        </div>
+                    </div>
+                    <div class="secRow">
+                        <div class="expense-box utilities">
+                            <span>Utilities</span>
+                            <span>₱80.50</span>
+                        </div>
+                    </div>
+                    <div class="thirdRow">
+                        <div class="expense-box added-funds">
+                            <span>Added Funds</span>
+                            <span>₱120.25</span>
+                        </div>
+                    </div>
+                    <div class="frthRow">
+                        <div class="expense-box travel">
+                            <span>Travel</span>
+                            <span>₱200.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div className="footerr">
+                <div className="footerNote">
+                    <h3>Note</h3>
+                </div>
+
+            </div>
+        </div>
+    )
 }
 
 export default Category

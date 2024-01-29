@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './Compo.css';
+import './DashbMain.css'
 import axios from "axios";
 import logo from "../assets/logo.png";
 import profile from "../assets/profile.png";
@@ -22,7 +23,7 @@ const Dashboard = () => {
 
 
   return (
-   
+
     <div className="d-flex">
       <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 custom-sidebar">
         <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
@@ -63,7 +64,7 @@ const Dashboard = () => {
                 <span className="ms-2 ms-2 dashboard-link">History</span>
               </Link>
             </li>
-            
+
             <li className="w-100">
               <Link
                 to="/dashboard/jeepney_detail"
@@ -89,28 +90,31 @@ const Dashboard = () => {
       </div>
       <div className="noName">
         <div className="dashbMain">
+          <div className="headerempty">
+
+          </div>
 
           <div className='userDetails'>
             <div className='userName'>
               <h5>User: </h5>
             </div>
-
+            <div className="userProf">
+              <img src={profile} alt="profile" />
+            </div>
 
           </div>
-          <div className="userProf">
-            <img className="userProf" src={profile} alt="Logo" />
-          </div>
+
 
 
         </div>
         <div className="dashbMainBody">
-          
+
           <Outlet />
-          </div>
-        
         </div>
+
       </div>
-    
+    </div>
+
   );
 };
 
